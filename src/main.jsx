@@ -29,6 +29,7 @@ i18n.use(initReactI18next).init({
   },
 });
 
+/*SE SUBE MODIFICACION A DEV */
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Home />
