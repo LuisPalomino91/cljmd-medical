@@ -1,0 +1,155 @@
+{
+    "header": {
+        "horario": "Lunes - Viernes 8:00 - 18:00 / Sabado 8:00 - 14:00",
+        "telefono": "Telefono: ",
+        "noTelefono": "55-2456-9564",
+        "direccion": "C.3 24, Agrícola Pantitlán, Iztacalco, 08100 Ciudad de México, CDMX"
+    },
+    "menu": [
+        {
+            "titulo": "Conocenos",
+            "subMenu": [
+                {
+                    "titulo": "¿Quiénes somos?",
+                    "href": "/nosotros"
+                },
+                {
+                    "titulo": "Testimonios",
+                    "href": "/testimonios"
+                }
+            ]
+        },
+        {
+            "titulo": "Servicios",
+            "href": "/general",
+            "subMenu": [
+                {
+                    "titulo": "Diabetes",
+                    "href": "/general"
+                },
+                {
+                    "titulo": "Hipertensión",
+                    "href": "/service-details-2"
+                },
+                {
+                    "titulo": "Nutrición",
+                    "href": "/service-details-3"
+                }
+            ]
+        },
+        {
+            "titulo": "Promociones",
+            "href": "/promociones",
+            "subMenu": []
+        },
+        {
+            "titulo": "Contactanos",
+            "href": "/contacto",
+            "subMenu": []
+        }
+    ],
+    "banner": {
+        "titulo": "Más que una opción, somos una solución",
+        "subTitulo": "DIABETES HIPERTENSIÓN",
+        "mensaje": "Date la oportunidad de poder transformar tu salud"
+    },
+    "quienes": {
+        "titulo": "¿QUIÉNES SOMOS?",
+        "subTitulo": "Consultorios CL-JMD",
+        "mensaje": "En Consultorios CL-JMD, podrás encontrar un mejor enfoque médico, profesional y de alto nivel en atención no solo en Diabetes e Hipertensión, sino también en Enfermedades Psicoimunometabólicas. Nuestros valores con el cliente son:",
+        "valores": {
+            "opcion1": "Pasión",
+            "opcion2": "Responsabilidad",
+            "opcion3": "Enfocados en el cliente"
+        },
+        "aniosExp": "40 Años",
+        "experiencia": "Experiencia Médica"
+    },
+    "promociones": {
+        "titulo": "NUESTROS PAQUETES",
+        "subTitulo": "La mejor opción al alcance de tus manos",
+        "paquetes": [
+            {
+                "titulo": "Paquete Inicial",
+                "subTitulo": "Consulta Incluida",
+                "precio": "$600.00",
+                "elementos": [
+                    "Chequeo cualitativo de orina",
+                    "Chequeo cualitativo de glucosa"
+                ],
+                "seleccion": "1"
+            },
+            {
+                "titulo": "Paquete Básico",
+                "subTitulo": "Consulta Incluida",
+                "precio": "$900.00",
+                "elementos": [
+                    "Chequeo cualitativo de orina",
+                    "Chequeo cualitativo de glucosa",
+                    "Química Sanguínea de 6 Elementos",
+                    "BH Completa"
+                ],
+                "seleccion": "2"
+            },
+            {
+                "titulo": "Paquete Intermedio",
+                "subTitulo": "Consulta Incluida",
+                "precio": "$1300.00",
+                "elementos": [
+                    "Chequeo cualitativo de orina",
+                    "Chequeo cualitativo de glucosa",
+                    "Química Sanguínea de 33 Elementos",
+                    "BH Completa",
+                    "EGO"
+                ],
+                "seleccion": "3"
+            },
+            {
+                "titulo": "Paquete Completo",
+                "subTitulo": "Consulta Incluida",
+                "precio": "$1600.00",
+                "elementos": [
+                    "Chequeo cualitativo de orina",
+                    "Chequeo cualitativo de glucosa",
+                    "Química Sanguínea de 48 Elementos",
+                    "BH Completa",
+                    "EGO",
+                    "Cultivo de Orina"
+                ],
+                "seleccion": "4"
+            }
+        ]
+    },
+    "testimonios": {
+        "titulo": "TESTIMONIOS",
+        "subTitulo": "¿Qué piensan nuestros pacientes de Consultorios CL-JMD?",
+        "lista": [
+            {
+                "nombre": "Naruto Uzumaki",
+                "mensaje": "Quiero ser hokage"
+            },
+            {
+                "nombre": "Monkey D. Luffy",
+                "mensaje": "Quiero ser pirata"
+            },
+            {
+                "nombre": "Son Goku",
+                "mensaje": "Quiero ser el mas fuerte del universo"
+            }
+        ]
+    },
+    "contactanos": {
+        "llamanos": {
+            "titulo": "Llamanos",
+            "subTitulo": "(+52)55-2456-9564"
+        },
+        "correo": {
+            "titulo": "Dirección Electrónica",
+            "subsubTitulotitulo": "Correo: info@example.com"
+        },
+        "direccion": {
+            "titulo": "ubicacion",
+            "subTitulo": "C.3 24, Agrícola Pantitlán, Iztacalco, 08100 Ciudad de México, CDMX"
+        }
+    }
+}

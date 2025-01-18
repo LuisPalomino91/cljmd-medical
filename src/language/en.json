@@ -1,0 +1,138 @@
+{
+    "header": {
+        "horario": "Monday - Friday 8:00 - 18:00 / Saturday 8:00 - 14:00",
+        "telefono": "Phone: ",
+        "noTelefono": "55-2456-9564",
+        "direccion": "C.3 24, Agrícola Pantitlán, Iztacalco, 08100 Mexico City, CDMX"
+    },
+    "menu": [
+        {
+            "titulo": "Get to know us",
+            "subMenu": [
+                {
+                    "titulo": "Who are we?",
+                    "href": "/nosotros"
+                },
+                {
+                    "titulo": "Testimonials",
+                    "href": "/testimonios"
+                }
+            ]
+        },
+        {
+            "titulo": "Services",
+            "subMenu": [
+                {
+                    "titulo": "General Consultation",
+                    "href": "/general"
+                },
+                {
+                    "titulo": "Diabetes",
+                    "href": ""
+                },
+                {
+                    "titulo": "Hypertension",
+                    "href": ""
+                },
+                {
+                    "titulo": "Nutrition",
+                    "href": ""
+                }
+            ]
+        },
+        {
+            "titulo": "Promotions",
+            "subMenu": []
+        },
+        {
+            "titulo": "Contact us",
+            "subMenu": []
+        }
+    ],
+    "banner": {
+        "titulo": "More than an option, we are a solution",
+        "subTitulo": "DIABETES HYPERTENSION",
+        "mensaje": "Give yourself the opportunity to transform your health"
+    },
+    "quienes": {
+        "titulo": "WHO ARE WE?",
+        "subTitulo": "CL-JMD Offices",
+        "mensaje": "At CL-JMD Offices, you can find a better medical, professional and high-level approach in care not only in Diabetes and Hypertension, but also in Psychoimmunometabolic Diseases. Our values ​​​​with the client are:",
+        "valores": {
+            "opcion1": "Passion",
+            "opcion2": "Responsibility",
+            "opcion3": "Customer-focused"
+        },
+        "aniosExp": "40 Years",
+        "experiencia": "Medical Experience"
+    },
+    "promociones": {
+        "titulo": "OUR PROMOTIONS",
+        "subTitulo": "The best option at your fingertips",
+        "paquetes": [
+            {
+                "titulo": "Basic Package",
+                "subTitulo": "Consultation Included",
+                "precio": "$0.00",
+                "elementos": {
+                    "elemento1": "Blood Chemistry - Elements",
+                    "elemento2": "General Urine Test"
+                }
+            },
+            {
+                "titulo": "Intermediate Package",
+                "subTitulo": "Consultation Included",
+                "precio": "$0.00",
+                "elementos": {
+                    "elemento1": "Blood Chemistry - Elements",
+                    "elemento2": "General Urine Test",
+                    "elemento3": "Hematic Biometry"
+                }
+            },
+            {
+                "titulo": "Complete Package",
+                "subTitulo": "Consultation Included",
+                "precio": "$0.00",
+                "elementos": {
+                    "elemento1": "Blood Chemistry - Elements",
+                    "elemento2": "General Urine Test",
+                    "elemento3": "Hematic Biometry",
+                    "elemento4": "Glycosylated Hemoglobin",
+                    "elemento5": "Microalbuminuria (Albumin) in Urine at Chance"
+                }
+            }
+        ]
+    },
+    "testimonios": {
+        "titulo": "TESTIMONIALS",
+        "subTitulo": "What do our patients think about CL-JMD Offices?",
+        "lista": [
+            {
+                "nombre": "Naruto Uzumaki",
+                "mensaje": "I want to be hokage"
+            },
+            {
+                "nombre": "Monkey D. Luffy",
+                "mensaje": "I want to be a pirate"
+            },
+            {
+                "nombre": "Son Goku",
+                "mensaje": "I want to be the strongest in the universe"
+            }
+        ]
+    },
+    "contactanos": {
+        "llamanos": {
+            "titulo": "Call us",
+            "subTitulo": "(+52) 55 -2456-9564"
+        },
+        "correo": {
+            "titulo": "E-mail Direccion",
+            "subTitulo": "Email: info@example.com"
+        },
+        "direccion": {
+            "titulo": "location",
+            "subTitulo": "C.3 24, Pantitlán Agricultural Company, Iztacalco, 08100 Mexico City, CDMX"
+        }
+    }
+}
