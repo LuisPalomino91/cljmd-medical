@@ -29,11 +29,11 @@ export default function Home() {
                 <Routes>
                     <Route path="/" element={
                         <Layout headerStyle={2} footerStyle={1} translate={t} >
-                            <Banner />
-                            <About />
+                            <Banner translate={t} />
+                            <About translate={t} />
                             <Pricing translate={t} />
-                            <Testimonial />
-                            <Contact />
+                            {/*<Testimonial />*/}
+                            <Contact translate={t} />
                         </Layout>}>
                     </Route>
                     <Route path="/nosotros" element={<AboutUs translate={t}/>} />

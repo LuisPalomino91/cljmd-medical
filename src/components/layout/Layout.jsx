@@ -8,6 +8,7 @@ const WOW = import('wowjs/dist/wow');
 import Header2 from './header/Header2';
 import DataBg from "../elements/DataBg";
 import BackToTop from "../elements/BackToTop";
+import Footer from "../footer/Footer";
 
 export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls, translate }) {
     const [scroll, setScroll] = useState(0);
@@ -51,6 +52,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
 
                 {/*{(footerStyle === 1 || !footerStyle) && <Footer1 />}
                 {footerStyle === 2 && <Footer2 />}*/}
+                <Footer translate={translate} />
             </div>
             <BackToTop scroll={scroll} />
         </>

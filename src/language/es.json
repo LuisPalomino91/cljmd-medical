@@ -7,7 +7,7 @@
     },
     "menu": [
         {
-            "titulo": "Conocenos",
+            "titulo": "Conócenos",
             "subMenu": [
                 {
                     "titulo": "¿Quiénes somos?",
@@ -43,7 +43,7 @@
             "subMenu": []
         },
         {
-            "titulo": "Contactanos",
+            "titulo": "Contáctanos",
             "href": "/contacto",
             "subMenu": []
         }
@@ -51,17 +51,17 @@
     "banner": {
         "titulo": "Más que una opción, somos una solución",
         "subTitulo": "DIABETES HIPERTENSIÓN",
-        "mensaje": "Date la oportunidad de poder transformar tu salud"
+        "mensaje": "Date la oportunidad de poder transformar tu salud."
     },
-    "quienes": {
+    "about": {
         "titulo": "¿QUIÉNES SOMOS?",
         "subTitulo": "Consultorios CL-JMD",
         "mensaje": "En Consultorios CL-JMD, podrás encontrar un mejor enfoque médico, profesional y de alto nivel en atención no solo en Diabetes e Hipertensión, sino también en Enfermedades Psicoimunometabólicas. Nuestros valores con el cliente son:",
-        "valores": {
-            "opcion1": "Pasión",
-            "opcion2": "Responsabilidad",
-            "opcion3": "Enfocados en el cliente"
-        },
+        "valores": [
+            "Pasión",
+            "Responsabilidad",
+            "Enfocados en el cliente"
+        ],
         "aniosExp": "40 Años",
         "experiencia": "Experiencia Médica"
     },
@@ -120,6 +120,16 @@
             }
         ]
     },
+    "dlgPromocion":{
+        "titulo": "Paquete Seleccionado",
+        "informacion": "El paquete que seleccionaste es un <b>:paquete</b> con un costo de <b>:precio MXN</b>, el cual ya cuenta con consulta incluida y estudios de laboratorio. Para poder continuar con su registro favor ingresar la siguiente información:",
+        "lblPaciente": "Nombre del Paciente",
+        "lblNumero": "99-9999-9999",
+        "lblCorreo": "me@example.com",
+        "informacionFooter": "Para más información sobre su paquete, favor de revisar su cuenta de correo electrónico de contacto.",
+        "btnCancelar": "CANCELAR",
+        "btnGuardar": "GUARDAR"
+    },
     "testimonios": {
         "titulo": "TESTIMONIOS",
         "subTitulo": "¿Qué piensan nuestros pacientes de Consultorios CL-JMD?",
@@ -139,17 +149,35 @@
         ]
     },
     "contactanos": {
+        "titulo": "CONTÁCTANOS",
+        "lblNombre": "Primer Nombre",
+        "lblApellido": "Segundo Nombre",
+        "lblCorreo": "Correo",
+        "lblTelefono": "No. Telefono",
+        "lblAsunto": "Asunto",
+        "lblMensaje": "Mensaje",
+        "btnEnviar": "Enviar",
         "llamanos": {
             "titulo": "Llamanos",
-            "subTitulo": "(+52)55-2456-9564"
+            "subTitulo": "Consultorio:",
+            "valor": "(+52)55-2456-9564"
         },
         "correo": {
             "titulo": "Dirección Electrónica",
-            "subsubTitulotitulo": "Correo: info@example.com"
+            "subTitulo": "Correo:",
+            "valor": "cljmdconsultorio@gmail.com"
         },
         "direccion": {
-            "titulo": "ubicacion",
-            "subTitulo": "C.3 24, Agrícola Pantitlán, Iztacalco, 08100 Ciudad de México, CDMX"
+            "titulo": "Ubicacion",
+            "subTitulo": "C.3 24, Agrícola Pantitlán, Iztacalco,",
+            "valor": "08100 Ciudad de México, CDMX"
         }
+    },
+    "footer": {
+        "avisos": "Aviso de Privacidad",
+        "terminos": "Terminos y Condiciones",
+        "contactanos": "Contáctanos",
+        "copyrigth": "Consultorios CL-JMD",
+        "anio":"2025"
     }
 }
