@@ -11,8 +11,8 @@ export default function Contact() {
     const envioCorreo = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_72uxlmc', 'template_19jmpf9', form.current, {
-            publicKey: 'qDEpAUGIkUHfGl1xq'
+        emailjs.sendForm(API_SERVICEID, API_TEMPLATE_CONTAC, form.current, {
+            publicKey: API_PUBLICKEY
         }).then(
             () => {
                 Navigate({to: '/notificacion'});

@@ -2,6 +2,7 @@ import { Button, Dialog, DialogActions, DialogContent, DialogContentText, Dialog
 import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { Navigate } from "react-router-dom";
+import { API_SERVICEID } from "../../../env";
 
 export default function Promociondlg({ open, handleClose, paquete }) {
 
@@ -11,8 +12,8 @@ export default function Promociondlg({ open, handleClose, paquete }) {
     const registraPromocion = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_72uxlmc', 'template_zc05f8p', form.current, {
-            publicKey: 'qDEpAUGIkUHfGl1xq'
+        emailjs.sendForm(API_SERVICEID, API_TEMPLATE_PROMO, form.current, {
+            publicKey: API_PUBLICKEY
         }).then(
             () => {
                 handleClose();
