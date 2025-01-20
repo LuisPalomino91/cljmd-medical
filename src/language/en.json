@@ -10,7 +10,7 @@
             "titulo": "Get to know us",
             "subMenu": [
                 {
-                    "titulo": "Who are we?",
+                    "titulo": "¿Who are we?",
                     "href": "/nosotros"
                 },
                 {
@@ -21,118 +21,163 @@
         },
         {
             "titulo": "Services",
+            "href": "/general",
             "subMenu": [
                 {
-                    "titulo": "General Consultation",
+                    "titulo": "Diabetes",
                     "href": "/general"
                 },
                 {
-                    "titulo": "Diabetes",
-                    "href": ""
-                },
-                {
                     "titulo": "Hypertension",
-                    "href": ""
+                    "href": "/service-details-2"
                 },
                 {
                     "titulo": "Nutrition",
-                    "href": ""
+                    "href": "/service-details-3"
                 }
             ]
         },
         {
             "titulo": "Promotions",
+            "href": "/promociones",
             "subMenu": []
         },
         {
             "titulo": "Contact us",
+            "href": "/contacto",
             "subMenu": []
         }
     ],
     "banner": {
-        "titulo": "More than an option, we are a solution",
+        "titulo": "More than ann option, we area solution",
         "subTitulo": "DIABETES HYPERTENSION",
-        "mensaje": "Give yourself the opportunity to transform your health"
+        "mensaje": "Give yourself the opportunity to trandorm your health."
     },
-    "quienes": {
+    "about": {
         "titulo": "WHO ARE WE?",
         "subTitulo": "CL-JMD Offices",
-        "mensaje": "At CL-JMD Offices, you can find a better medical, professional and high-level approach in care not only in Diabetes and Hypertension, but also in Psychoimmunometabolic Diseases. Our values ​​​​with the client are:",
-        "valores": {
-            "opcion1": "Passion",
-            "opcion2": "Responsibility",
-            "opcion3": "Customer-focused"
-        },
+        "mensaje": "At CL-JMD Offices, you will be able to find a better medical aproach, professional and high level of care not only in Diabetes and Hypertesion, but also in Psychoimmunometabolic Diseases. Our values with the client are:",
+        "valores": [
+            "Passion",
+            "Responsibility",
+            "Customer focused"
+        ],
         "aniosExp": "40 Years",
         "experiencia": "Medical Experience"
     },
     "promociones": {
-        "titulo": "OUR PROMOTIONS",
-        "subTitulo": "The best option at your fingertips",
+        "titulo": "OUR PACKAGES",
+        "subTitulo": "The best option within your reach",
         "paquetes": [
+            {
+                "titulo": "Initial Package",
+                "subTitulo": "Consultation Included",
+                "precio": "$600.00",
+                "elementos": [
+                    "Qualitative urine check",
+                    "Qualitative glucose check"
+                ],
+                "seleccion": "1"
+            },
             {
                 "titulo": "Basic Package",
                 "subTitulo": "Consultation Included",
-                "precio": "$0.00",
-                "elementos": {
-                    "elemento1": "Blood Chemistry - Elements",
-                    "elemento2": "General Urine Test"
-                }
+                "precio": "$900.00",
+                "elementos": [
+                    "Qualitative urine check",
+                    "Qualitative glucose check",
+                    "6-point Blood Chemistry Elements",
+                    "Complete BH"
+                ],
+                "seleccion": "2"
             },
             {
                 "titulo": "Intermediate Package",
                 "subTitulo": "Consultation Included",
-                "precio": "$0.00",
-                "elementos": {
-                    "elemento1": "Blood Chemistry - Elements",
-                    "elemento2": "General Urine Test",
-                    "elemento3": "Hematic Biometry"
-                }
+                "precio": "$1300.00",
+                "elementos": [
+                    "Qualitative urine check",
+                    "Qualitative glucose check"
+                    "33 Element Blood Chemistry",
+                    "Complete BH",
+                    "EGO"
+                ],
+                "seleccion": "3"
             },
             {
                 "titulo": "Complete Package",
-                "subTitulo": "Consultation Included",
-                "precio": "$0.00",
-                "elementos": {
-                    "elemento1": "Blood Chemistry - Elements",
-                    "elemento2": "General Urine Test",
-                    "elemento3": "Hematic Biometry",
-                    "elemento4": "Glycosylated Hemoglobin",
-                    "elemento5": "Microalbuminuria (Albumin) in Urine at Chance"
-                }
+                "subTitulo": "Consulta Incluida",
+                "precio": "$1600.00",
+                "elementos": [
+                    "Qualitative urine check",
+                    "Qualitative glucose check"
+                    "48 Element Blood Chemistry",
+                    "Complete BH",
+                    "EGO",
+                    "Urine Culture"
+                ],
+                "seleccion": "4"
             }
         ]
     },
+    "dlgPromocion":{
+        "titulo": "Select Package",
+        "informacion": "The package you selected is a <b>:package</b> with a cost of <b>:price MXN</b>, which already includes a consultation and laboratory studies. In order to continue with your registration, please enter the following information:",
+        "lblPaciente": "Patient Name",
+        "lblNumero": "99-9999-9999",
+        "lblCorreo": "me@example.com",
+        "informacionFooter": "For more information about your package, please check your contact email account.",
+        "btnCancelar": "CANCEL",
+        "btnGuardar": "SAVE"
+    },
     "testimonios": {
         "titulo": "TESTIMONIALS",
-        "subTitulo": "What do our patients think about CL-JMD Offices?",
+        "subTitulo": "What do our patients think about CL-JMD Clinics?",
         "lista": [
             {
                 "nombre": "Naruto Uzumaki",
-                "mensaje": "I want to be hokage"
+                "mensaje": "Quiero ser hokage"
             },
             {
                 "nombre": "Monkey D. Luffy",
-                "mensaje": "I want to be a pirate"
+                "mensaje": "Quiero ser pirata"
             },
             {
                 "nombre": "Son Goku",
-                "mensaje": "I want to be the strongest in the universe"
+                "mensaje": "Quiero ser el mas fuerte del universo"
             }
         ]
     },
     "contactanos": {
+        "titulo": "CONTACT US",
+        "lblNombre": "First Name",
+        "lblApellido": "Middle Name",
+        "lblCorreo": "Email",
+        "lblTelefono": "No. Phone",
+        "lblAsunto": "Subject",
+        "lblMensaje": "Message",
+        "btnEnviar": "Send",
         "llamanos": {
             "titulo": "Call us",
-            "subTitulo": "(+52) 55 -2456-9564"
+            "subTitulo": "Office:",
+            "valor": "(+52)55-2456-9564"
         },
         "correo": {
-            "titulo": "E-mail Direccion",
-            "subTitulo": "Email: info@example.com"
+            "titulo": "Email Address",
+            "subTitulo": "Mail:",
+            "valor": "cljmdconsultorio@gmail.com"
         },
         "direccion": {
-            "titulo": "location",
-            "subTitulo": "C.3 24, Pantitlán Agricultural Company, Iztacalco, 08100 Mexico City, CDMX"
+            "titulo": "Location",
+            "subTitulo": "C.3 24, Agrícola Pantitlán, Iztacalco,",
+            "valor": "08100 Mexico City, CDMX"
         }
+    },
+    "footer": {
+        "avisos": "Privacy Notice",
+        "terminos": "Terms and Conditions",
+        "contactanos": "Contact Us",
+        "copyrigth": "CL-JMD Offices",
+        "anio":"2025"
     }
 }
