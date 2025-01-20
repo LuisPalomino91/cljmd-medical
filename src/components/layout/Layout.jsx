@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 // Dynamic import for the WOW library
-const WOW = import('wowjs/dist/wow');
+//const WOW = import('wowjs/dist/wow');
 
 import Header2 from './header/Header2';
 import DataBg from "../elements/DataBg";
@@ -23,11 +23,11 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
     const handleSidebar = () => setSidebar(!isSidebar);
 
     useEffect(() => {
-        const WOW = require('wowjs')
+        /*const WOW = require('wowjs')
         window.wow = new WOW.WOW({
             live: false
         })
-        window.wow.init()
+        window.wow.init()*/
 
         document.addEventListener("scroll", () => {
             const scrollCheck = window.scrollY > 100
