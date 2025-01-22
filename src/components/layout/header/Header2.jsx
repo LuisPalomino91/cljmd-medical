@@ -3,10 +3,11 @@
 import { Link } from "@mui/material";
 import Menu from '../Menu';
 import MobileMenu from "../MobileMenu";
+import { useTranslation } from "react-i18next";
 {/*import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"*/}
 
-export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar, translate }) {
+export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar, translate, handleIdioma }) {
     return (
         <>
             <header className={`main-header header-style-two ${scroll ? "fixed-header" : ""}`}>
@@ -21,7 +22,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
                         </ul>
                         <ul className="social-links clearfix">
                             <li><Link href="https://www.facebook.com/profile.php?id=61568502372047"><i className="icon-7" width={25} height={25}></i></Link></li>
-                            <li><img src="assets/images/idioma/mexico.png" alt="" width={25} height={25} /> | <img src="assets/images/idioma/estadosunidos.png" alt="" width={25} height={25} /></li>
+                            <li><img src="assets/images/idioma/mexico.png" alt="" width={25} height={25} onClick={()=>{handleIdioma(1)}} /> | <img src="assets/images/idioma/estadosunidos.png" alt="" width={25} height={25} onClick={()=>{handleIdioma(2)}} /></li>
                         </ul>
                     </div>
 

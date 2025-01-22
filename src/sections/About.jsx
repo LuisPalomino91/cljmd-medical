@@ -36,9 +36,9 @@ export default function About({ translate }) {
                                         </p>
                                         <br/>
                                         <ul className="list-style-one clearfix">
-                                            {about.valores.map((elemen) => {
+                                            {about.elementos.map((elemen, i) => {
                                                 return (
-                                                    <li>{elemen}</li>
+                                                    <li key={i}>{elemen}</li>
                                                 );
                                             })}
                                         </ul>

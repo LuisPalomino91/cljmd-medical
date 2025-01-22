@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import { Navigate } from 'react-router-dom';
 
 export default function Contact({ translate }) {
+    
     const contacto = translate("contactanos", { returnObjects: true });
 
     const form = useRef();

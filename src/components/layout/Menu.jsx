@@ -9,13 +9,13 @@ export default function Menu({ translate }) {
     return (
         <>
             <ul className="navigation clearfix">
-                {menus.map((menu) => {
+                {menus.map((menu, index) => {
                     return (
-                        <li className="dropdown"><Link href={menu.href != undefined ? menu.href : "/"}>{menu.titulo}</Link>
+                        <li key={index} className="dropdown"><Link href={menu.href != undefined ? menu.href : "/"}>{menu.titulo}</Link>
                             <ul>
-                                {menu.subMenu.map((subMenu) => {
+                                {menu.subMenu.map((subMenu, i) => {
                                     return (
-                                        <li><Link href={subMenu.href}>{subMenu.titulo}</Link></li>
+                                        <li key={i}><Link href={subMenu.href}>{subMenu.titulo}</Link></li>
                                     );
                                 })}
                             </ul>

@@ -44,13 +44,13 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar,
                             <ul className="navigation clearfix">
                                 {menus.map((menu, index) => {
                                     return (
-                                        <li className={isActive.key == index ? "dropdown current" : "dropdown"}><Link href={menu.href != undefined ? menu.href : "/"}>{menu.titulo}</Link>
+                                        <li key={index} className={isActive.key == index ? "dropdown current" : "dropdown"}><Link href={menu.href != undefined ? menu.href : "/"}>{menu.titulo}</Link>
                                             {menu.subMenu.length > 0 ?
                                                 <>
                                                     <ul style={{ display: `${isActive.key == index ? "block" : "none"}` }}>
-                                                        {menu.subMenu.map((subMenu) => {
+                                                        {menu.subMenu.map((subMenu, i) => {
                                                             return (
-                                                                <li><Link href={subMenu.href}>{subMenu.titulo}</Link></li>
+                                                                <li key={i}><Link href={subMenu.href}>{subMenu.titulo}</Link></li>
                                                             );
                                                         })}
                                                     </ul>
@@ -64,21 +64,17 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar,
                         </div>
                     </div>
                     <div className="contact-info">
-                        <h4>Contact Info</h4>
+                        <h4>Contacto</h4>
                         <ul>
-                            <li>Chicago 12, Melborne City, USA</li>
-                            <li><Link href="tel:+8801682648101">+88 01682648101</Link></li>
-                            <li><Link href="mailto:info@example.com">info@example.com</Link></li>
+                            <li>C.3 24, Agrícola Pantitlán, Iztacalco, 08100 Ciudad de México, CDMX</li>
+                            <li><Link href="tel:5524569564">Telefono: 55-2456-9564</Link></li>
+                            <li><Link href="mailto:cljmdconsultorio@gmail.com">cljmdconsultorio@gmail.com</Link></li>
                         </ul>
                     </div>
                     {/*Social Links*/}
                     <div className="social-links">
                         <ul className="clearfix">
-                            <li><Link href="/"><span className="fab fa-twitter"></span></Link></li>
-                            <li><Link href="/"><span className="fab fa-facebook-square"></span></Link></li>
-                            <li><Link href="/"><span className="fab fa-pinterest-p"></span></Link></li>
-                            <li><Link href="/"><span className="fab fa-instagram"></span></Link></li>
-                            <li><Link href="/l"><span className="fab fa-youtube"></span></Link></li>
+                            <li><Link href="https://www.facebook.com/profile.php?id=61568502372047"><span className="fab fa-facebook-square"></span></Link></li>
                         </ul>
                     </div>
                 </nav>

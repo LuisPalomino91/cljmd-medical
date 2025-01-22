@@ -4,7 +4,10 @@ import { useState } from 'react'
 import Layout from '../../components/layout/Layout'
 import { Link } from '@mui/material'
 
-export default function Services3({translate}) {
+export default function Services3({ translate, cambioIdioma }) {
+
+    const servicios = translate("servicios", { returnObjects: true });
+
     const [isActive, setIsActive] = useState({
         status: false,
         key: 1,
@@ -24,23 +27,25 @@ export default function Services3({translate}) {
     }
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Service Details" translate={translate}>
+            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Service Details" translate={translate} handleIdioma={cambioIdioma}>
                 <div>
                     {/* service-section */}
-                    <section className="service-details pb_110" style={{marginTop:"10px"}}>
+                    <section className="service-details pb_110" style={{ marginTop: "10px" }}>
                         <div className="auto-container">
                             <div className="row clearfix">
                                 <div className="col-lg-4 col-md-12 col-sm-12 sidebar-side">
                                     <div className="default-sidebar service-sidebar mr_15">
                                         <div className="sidebar-widget category-widget">
                                             <div className="widget-title">
-                                                <h3>Servicios</h3>
+                                                <h3>{servicios.titulo}</h3>
                                             </div>
                                             <div className="widget-content">
                                                 <ul className="category-list clearfix">
-                                                    <li><Link href="general">Diabetes</Link></li>
-                                                    <li><Link href="service-details-2">Hipertensión</Link></li>
-                                                    <li><Link href="service-details-3" className="current">Nutrición</Link></li>
+                                                    {servicios.menu.map((elemen) => {
+                                                        return (
+                                                            <li><Link href={elemen.href} className={elemen.activo}>{elemen.label}</Link></li>
+                                                        );
+                                                    })}
                                                 </ul>
                                             </div>
                                         </div>
@@ -51,8 +56,8 @@ export default function Services3({translate}) {
                                                     <div className="icon-box"><i className="icon-29"></i></div>
                                                 </div>
                                                 <div className="lower-content">
-                                                    <h3>Nutrición</h3>
-                                                    <p>Para perder peso no solo es necesario hacer dieta y practicar deporte, debes seguir  las reglas para quemar calorías, esto es lo que te permitirá lograr tu objetivo.</p>
+                                                    <h3>{servicios.nutricion.titulo}</h3>
+                                                    <p>{servicios.nutricion.mensaje}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -63,16 +68,17 @@ export default function Services3({translate}) {
                                         <div className="content-one mb_60">
                                             <figure className="image-box mb_40"><img src="assets/images/service/service-7.jpg" alt="" /></figure>
                                             <div className="text-box">
-                                                <h2>¿Qué es la Nutrición?</h2>
-                                                <p>La nutrición es el proceso de consumir y utilizar alimentos y nutrientes para que el cuerpo funcione. Es un tema que se relaciona con la salud y que es importante a lo largo de la vida. </p><br/>
-                                                <p>La nutrición incluye: La obtención de alimentos, La digestión de los alimentos, La asimilación de los nutrientes, El transporte de los nutrientes al torrente sanguíneo, El uso de los nutrientes en el cuerpo.</p><br/>
-                                                <p>Para tener una buena nutrición, es importante consumir alimentos y bebidas que contengan los nutrientes necesarios. Estos nutrientes son proteínas, carbohidratos, grasas, vitaminas, minerales y agua.</p>
-                                                <p>Una alimentación saludable puede ayudar a: </p><br/>
-                                                <ul style={{marginLeft:"2em"}}>
-                                                    <li>Reducir el riesgo de enfermedades como diabetes tipo 2, obesidad y enfermedades del corazón</li>
-                                                    <li>Vivir más tiempo</li>
-                                                    <li>Disponer de energía para el funcionamiento del organismo</li>
-                                                    <li>Renovar tejidos dañados</li>
+                                                <h2>{servicios.nutricion.pregunta}</h2>
+                                                <p>{servicios.nutricion.parrafo1}</p><br />
+                                                <p>{servicios.nutricion.parrafo2}</p><br />
+                                                <p>{servicios.nutricion.parrafo3}</p><br />
+                                                <p>{servicios.nutricion.parrafo4}</p><br />
+                                                <ul style={{ marginLeft: "2em" }}>
+                                                    {servicios.nutricion.elementos.map((elemen) => {
+                                                        return (
+                                                            <li>{elemen}</li>
+                                                        );
+                                                    })}
                                                 </ul>
                                             </div>
                                         </div>

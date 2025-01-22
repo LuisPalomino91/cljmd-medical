@@ -28,10 +28,10 @@ export default function Pricing({ translate }) {
                     </div>
 
                     <div className="row clearfix">
-                        {promociones.paquetes.map((paquete) => {
+                        {promociones.paquetes.map((paquete, index) => {
                             return (
                                 <>
-                                    <div className="col-lg-3 col-md-6 col-sm-12 pricing-block">
+                                    <div key={index} className="col-lg-3 col-md-6 col-sm-12 pricing-block">
                                         <div className="pricing-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                                             <div className="pricing-table">
                                                 <div className="shape" style={{ backgroundImage: 'url(assets/images/shape/shape-22.png)' }}></div>
@@ -42,16 +42,16 @@ export default function Pricing({ translate }) {
                                                 </div>
                                                 <div className="table-content">
                                                     <ul className="feature-list clearfix">
-                                                        {paquete.elementos.map((elemen) => {
+                                                        {paquete.elementos.map((elemen, i) => {
                                                             return (
-                                                                <li>{elemen}</li>
+                                                                <li key={i}>{elemen}</li>
                                                             );
                                                         })}
                                                     </ul>
                                                 </div>
                                                 <div className="table-footer">
                                                     <Button variant="outlined" color="primary" className="theme-btn btn-three" onClick={() => handleClickOpen(paquete)} style={{ width: "15em" }}>
-                                                        Selecciona <i className="icon-25"></i>
+                                                        {promociones.selecciona} <i className="icon-25"></i>
                                                     </Button>
                                                 </div>
                                             </div>
@@ -63,7 +63,7 @@ export default function Pricing({ translate }) {
                     </div>
                     <br />
                     <div className="sec-title">
-                        <span className="sub-title" style={{ color: "red" }}>Nota: Precios solo en linea.</span>
+                        <span className="sub-title" style={{ color: "red" }}>{promociones.nota}</span>
                     </div>
                 </div>
             </section>
