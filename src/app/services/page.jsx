@@ -4,7 +4,10 @@ import { useState } from 'react'
 import Layout from '../../components/layout/Layout'
 import { Link } from '@mui/material'
 
-export default function Services({translate}) {
+export default function Services({ translate, cambioIdioma }) {
+
+    const servicios = translate("servicios", { returnObjects: true });
+
     const [isActive, setIsActive] = useState({
         status: false,
         key: 1,
@@ -24,23 +27,25 @@ export default function Services({translate}) {
     }
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Service Details" translate={translate}>
+            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Service Details" translate={translate} handleIdioma={cambioIdioma}>
                 <div>
                     {/* service-section */}
-                    <section className="service-details pb_110" style={{marginTop:"10px"}}>
+                    <section className="service-details pb_110" style={{ marginTop: "10px" }}>
                         <div className="auto-container">
                             <div className="row clearfix">
                                 <div className="col-lg-4 col-md-12 col-sm-12 sidebar-side">
                                     <div className="default-sidebar service-sidebar mr_15">
                                         <div className="sidebar-widget category-widget">
                                             <div className="widget-title">
-                                                <h3>Servicios</h3>
+                                                <h3>{servicios.titulo}</h3>
                                             </div>
                                             <div className="widget-content">
                                                 <ul className="category-list clearfix">
-                                                    <li><Link href="general" className="current">Diabetes</Link></li>
-                                                    <li><Link href="service-details-2">Hipertención</Link></li>
-                                                    <li><Link href="service-details-3">Nutrición</Link></li>
+                                                    {servicios.menu.map((elemen) => {
+                                                        return (
+                                                            <li><Link href={elemen.href} className={elemen.activo}>{elemen.label}</Link></li>
+                                                        );
+                                                    })}
                                                 </ul>
                                             </div>
                                         </div>
@@ -51,8 +56,8 @@ export default function Services({translate}) {
                                                     <div className="icon-box"><i className="icon-9"></i></div>
                                                 </div>
                                                 <div className="lower-content">
-                                                    <h3>Diabetes</h3>
-                                                    <p>El paciente que más sabe y aplica lo que sabe, es el paciente que más y mejor vive.</p>
+                                                    <h3>{servicios.diabetes.titulo}</h3>
+                                                    <p>{servicios.diabetes.mensaje}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -63,22 +68,24 @@ export default function Services({translate}) {
                                         <div className="content-one mb_60">
                                             <figure className="image-box mb_40"><img src="assets/images/service/service-7.jpg" alt="" /></figure>
                                             <div className="text-box">
-                                                <h2>¿Qué es la Diabetes?</h2>
-                                                <p>La diabetes es una enfermedad crónica que se caracteriza por niveles elevados de azúcar en la sangre, también llamada glucosa, y por una deficiencia de insulina. La insulina es una hormona que el páncreas produce para ayudar a que la glucosa entre en las células y sea utilizada como energía.</p><br/>
-                                                <p>La diabetes puede afectar al corazón, los ojos, los riñones y el sistema nervioso. Entre sus complicaciones se encuentran: </p>
-                                                <ul style={{marginLeft:"2em"}}>
-                                                    <li>Enfermedad cardíaca</li>
-                                                    <li>Accidente cerebrovascular</li>
-                                                    <li>Presión arterial alta</li>
-                                                    <li>Ateroesclerosis</li>
-                                                    <li>Neuropatía, que es un daño en los nervios de las extremidades</li>
+                                                <h2>{servicios.diabetes.pregunta}</h2>
+                                                <p>{servicios.diabetes.parrafo1}</p><br />
+                                                <p>{servicios.diabetes.parrafo2} </p>
+                                                <ul style={{ marginLeft: "2em" }}>
+                                                    {servicios.diabetes.elementos.map((elemen) => {
+                                                            return (
+                                                                <li>{elemen}</li>
+                                                            );
+                                                        })}
                                                 </ul>
-                                                <br/>
-                                                <p>Existen tres tipos principales de diabetes:</p>
-                                                <ul style={{marginLeft:"2em"}}>
-                                                    <li><b>Diabetes tipo 1</b><br/><p>Suele aparecer en la juventud y afecta al páncreas, produciendo poca o nada de insulina.</p></li>
-                                                    <li><b>Diabetes tipo 2</b><br/><p>Es el tipo más común y se produce cuando el cuerpo no es capaz de producir insulina.</p></li>
-                                                    <li><b>Diabetes gestacional</b><br/><p>Se presenta durante el embarazo y suele darse en una etapa avanzada de la gestación.</p></li>
+                                                <br />
+                                                <p>{servicios.diabetes.parrafo3}</p>
+                                                <ul style={{ marginLeft: "2em" }}>
+                                                    {servicios.diabetes.elementosD.map((elemen) => {
+                                                            return (
+                                                                <li>{elemen}</li>
+                                                            );
+                                                        })}
                                                 </ul>
                                             </div>
                                         </div>

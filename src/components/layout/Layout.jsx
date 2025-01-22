@@ -1,11 +1,16 @@
 
 'use client'
 import { useEffect, useState } from "react";
+
+// Dynamic import for the WOW library
+//const WOW = import('wowjs/dist/wow');
+
 import Header2 from './header/Header2';
 import DataBg from "../elements/DataBg";
 import BackToTop from "../elements/BackToTop";
+import Footer from "../footer/Footer";
 
-export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls, translate }) {
+export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls, translate, handleIdioma }) {
     const [scroll, setScroll] = useState(0);
     const [isMobileMenu, setMobileMenu] = useState(false);
     const handleMobileMenu = () => {
@@ -18,8 +23,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
     const handleSidebar = () => setSidebar(!isSidebar);
 
     useEffect(() => {
-        /*const WOW = require('imports?this=>window!js/wow.js')
-
+        /*const WOW = require('wowjs')
         window.wow = new WOW.WOW({
             live: false
         })
@@ -31,13 +35,13 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
                 setScroll(scrollCheck)
             }
         })
-    }, [])
+    }, []);
 
     return (
         <>
             <DataBg />
             <div className={`boxed_wrapper ltr ${wrapperCls ? wrapperCls : ""}`} id="#top">
-                <Header2 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} translate={translate}/>
+                <Header2 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} translate={translate} handleIdioma={handleIdioma} />
 
                 {/*<Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} />
                 <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
@@ -48,8 +52,9 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
 
                 {/*{(footerStyle === 1 || !footerStyle) && <Footer1 />}
                 {footerStyle === 2 && <Footer2 />}*/}
+                <Footer translate={translate} handleIdioma={handleIdioma}/>
             </div>
-            <BackToTop scroll={scroll} />
+            <BackToTop scroll={scroll}/>
         </>
     );
 }

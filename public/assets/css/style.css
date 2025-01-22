@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url(./animate.css);
 @import url(./flaticon.css);
+@import url(./font-awesome-all.css);
 @import url(./bootstrap.css);
 @import url(./elpath.css);
 @import url(./module-css/news.css);
@@ -866,7 +867,7 @@ img {
 
 .header-top .top-inner .social-links li a {
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -1412,7 +1413,7 @@ img {
     position: relative;
     padding: 50px 25px;
     text-align: left;
-    padding-bottom: 100px;
+    padding-bottom: 15px;
 }
 
 .mobile-menu-visible {
@@ -1451,7 +1452,7 @@ img {
     height: 100%;
     max-height: 100%;
     overflow-y: auto;
-    background: #141417;
+    background: #ffffff;
     padding: 0px 0px;
     z-index: 5;
     opacity: 0;
@@ -1482,7 +1483,7 @@ img {
     width: 24px;
     text-align: center;
     font-size: 18px;
-    color: #ffffff;
+    color: #000;
     cursor: pointer;
     z-index: 10;
     -webkit-transition: all 0.9s ease;
@@ -1532,7 +1533,7 @@ img {
     padding: 10px 25px;
     font-size: 15px;
     font-weight: 500;
-    color: #ffffff;
+    color: #000;
     text-transform: uppercase;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -1553,7 +1554,7 @@ img {
     left: 0;
     top: 0;
     height: 0;
-    border-left: 5px solid #fff;
+    border-left: 5px solid #D23E60;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -1575,7 +1576,7 @@ img {
     font-size: 16px;
     line-height: 32px;
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.10);
+    background: var(--secondary-color);
     cursor: pointer;
     border-radius: 2px;
     -webkit-transition: all 500ms ease;
@@ -1587,7 +1588,7 @@ img {
 }
 
 .mobile-menu .navigation li.dropdown .dropdown-btn.open {
-    color: #ffffff;
+    color: var(--secondary-color);
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -1630,13 +1631,13 @@ div#mCSB_1_container {
 
 .mobile-menu .contact-info {
     position: relative;
-    padding: 120px 30px 20px 30px;
+    padding: 20px 30px 20px 30px;
 }
 
 .mobile-menu .contact-info h4 {
     position: relative;
     font-size: 20px;
-    color: #ffffff;
+    color: #000;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -1645,12 +1646,12 @@ div#mCSB_1_container {
     position: relative;
     display: block;
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.80);
+    color: #000;
     margin-bottom: 3px;
 }
 
 .mobile-menu .contact-info ul li a {
-    color: rgba(255, 255, 255, 0.80);
+    color: #000;
 }
 
 .mobile-menu .contact-info ul li a:hover {}

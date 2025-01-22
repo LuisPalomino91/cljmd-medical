@@ -4,7 +4,10 @@ import { useState } from 'react'
 import Layout from '../../components/layout/Layout'
 import { Link } from '@mui/material'
 
-export default function Services2({translate}) {
+export default function Services2({ translate, cambioIdioma }) {
+
+    const servicios = translate("servicios", { returnObjects: true });
+
     const [isActive, setIsActive] = useState({
         status: false,
         key: 1,
@@ -24,23 +27,25 @@ export default function Services2({translate}) {
     }
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Service Details" translate={translate}>
+            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Service Details" translate={translate} handleIdioma={cambioIdioma}>
                 <div>
                     {/* service-section */}
-                    <section className="service-details pb_110" style={{marginTop:"10px"}}>
+                    <section className="service-details pb_110" style={{ marginTop: "10px" }}>
                         <div className="auto-container">
                             <div className="row clearfix">
                                 <div className="col-lg-4 col-md-12 col-sm-12 sidebar-side">
                                     <div className="default-sidebar service-sidebar mr_15">
                                         <div className="sidebar-widget category-widget">
                                             <div className="widget-title">
-                                                <h3>Servicios</h3>
+                                                <h3>{servicios.titulo}</h3>
                                             </div>
                                             <div className="widget-content">
                                                 <ul className="category-list clearfix">
-                                                    <li><Link href="general">Diabetes</Link></li>
-                                                    <li><Link href="service-details-2" className="current">Hipertensión</Link></li>
-                                                    <li><Link href="service-details-3">Nutrición</Link></li>
+                                                    {servicios.menu.map((elemen) => {
+                                                        return (
+                                                            <li><Link href={elemen.href} className={elemen.activo}>{elemen.label}</Link></li>
+                                                        );
+                                                    })}
                                                 </ul>
                                             </div>
                                         </div>
@@ -51,8 +56,8 @@ export default function Services2({translate}) {
                                                     <div className="icon-box"><i className="icon-14"></i></div>
                                                 </div>
                                                 <div className="lower-content">
-                                                    <h3>Hipertensión</h3>
-                                                    <p>Adquiere buenos hábitos alimenticios, haz ejercicio y controlarás tu presión arterial.</p>
+                                                    <h3>{servicios.hipertension.titulo}</h3>
+                                                    <p>{servicios.hipertension.mensaje}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -63,21 +68,19 @@ export default function Services2({translate}) {
                                         <div className="content-one mb_60">
                                             <figure className="image-box mb_40"><img src="assets/images/service/service-7.jpg" alt="" /></figure>
                                             <div className="text-box">
-                                                <h2>¿Qué es la Hipertensión?</h2>
-                                                <p>La hipertensión arterial, también conocida como presión arterial alta, es una enfermedad que se produce cuando la presión de la sangre en las arterias es demasiado alta.</p><br/>
-                                                <p>La hipertensión es un factor de riesgo cardiovascular que puede provocar enfermedades graves como infarto de corazón, accidente cerebrovascular o insuficiencia renal.</p><br/>
-                                                <p>Factores de riesgo</p><br/>
-                                                <ul style={{marginLeft:"2em"}}>
-                                                    <li>Obesidad</li>
-                                                    <li>Consumo excesivo de sal</li>
-                                                    <li>Consumo de tabaco y alcohol</li>
-                                                    <li>Falta de actividad física</li>
-                                                    <li>Antecedentes familiares de hipertensión</li>
-                                                    <li>Edad avanzada</li>
-                                                    <li>Diabetes o nefropatías</li>
+                                                <h2>{servicios.hipertension.pregunta}</h2>
+                                                <p>{servicios.hipertension.parrafo1}</p><br />
+                                                <p>{servicios.hipertension.parrafo2}</p><br />
+                                                <p>{servicios.hipertension.parrafo3}</p><br />
+                                                <ul style={{ marginLeft: "2em" }}>
+                                                    {servicios.hipertension.elementos.map((elemen) => {
+                                                        return (
+                                                            <li>{elemen}</li>
+                                                        );
+                                                    })}
                                                 </ul>
-                                                <br/>
-                                                <p>Para diagnosticar la hipertensión, se debe medir la presión arterial en dos días distintos</p>
+                                                <br />
+                                                <p>{servicios.hipertension.parrafo4}</p>
                                             </div>
                                         </div>
                                         {/*<div className="content-two">
