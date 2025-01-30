@@ -77,17 +77,17 @@
             {
                 "label": "Diabetes",
                 "href": "general",
-                "activo": "current"
+                "activo": "d"
             },
             {
                 "label": "Hypertension",
                 "href": "service-details-2",
-                "activo": ""
+                "activo": "h"
             },
             {
                 "label": "Nutrition",
                 "href": "service-details-3",
-                "activo": ""
+                "activo": "n"
             }
         ],
         "diabetes": {
@@ -203,7 +203,9 @@
     },
     "dlgPromocion": {
         "titulo": "Select Package",
-        "informacion": "The package you selected is a <b>:package</b> with a cost of <b>:price MXN</b>, which already includes a consultation and laboratory studies. In order to continue with your registration, please enter the following information:",
+        "infoText": "The package you selected is a ",  
+        "infoText2": " with a cost of ",
+        "infoText3": ", which already includes a consultation and laboratory studies. In order to continue with your registration, please enter the following information:",
         "lblPaciente": "Patient Name",
         "lblNumero": "99-9999-9999",
         "lblCorreo": "me@example.com",
@@ -241,7 +243,7 @@
         "llamanos": {
             "titulo": "Call us",
             "subTitulo": "Office:",
-            "valor": "(+52)55-2456-9564"
+            "valor": "(+52) 55-2456-9564"
         },
         "correo": {
             "titulo": "Email Address",

@@ -17,39 +17,28 @@ import Services3 from "./service-details-3/page";
 
 
 export default function Home() {
-    const { t, i18n } = useTranslation();
-
-    useEffect(()=>{
-            cambioIdioma(1);
-    },[]);
-
-    const cambioIdioma = (opt) => {
-        if (opt == 1) {
-            i18n.changeLanguage("es");
-        } else {
-            i18n.changeLanguage("en");
-        }
-    }
+    
+    const { t } = useTranslation();
 
     return (
         <>
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={
-                        <Layout headerStyle={2} footerStyle={1} translate={t} handleIdioma={cambioIdioma} >
+                        <Layout headerStyle={2} footerStyle={1} translate={t}>
                             <Banner translate={t} />
                             <About translate={t} />
                             <Pricing translate={t} />
                             <Contact translate={t} />
                         </Layout>}>
                     </Route>
-                    <Route path="/nosotros" element={<AboutUs translate={t} cambioIdioma={cambioIdioma}/>} />
+                    <Route path="/nosotros" element={<AboutUs translate={t} />} />
                     <Route path="/testimonios" element={null} />
-                    <Route path="/general" element={<Services translate={t} cambioIdioma={cambioIdioma}/>} />
-                    <Route path="/service-details-2" element={<Services2 translate={t} cambioIdioma={cambioIdioma}/>} />
-                    <Route path="/service-details-3" element={<Services3 translate={t} cambioIdioma={cambioIdioma}/>} />
-                    <Route path="/promociones" element={<Promotions translate={t} cambioIdioma={cambioIdioma}/>} />
-                    <Route path="/contacto" element={<ContactUs translate={t} cambioIdioma={cambioIdioma}/>} />
+                    <Route path="/general" element={<Services translate={t} />} />
+                    <Route path="/service-details-2" element={<Services2 translate={t} />} />
+                    <Route path="/service-details-3" element={<Services3 translate={t} />} />
+                    <Route path="/promociones" element={<Promotions translate={t} />} />
+                    <Route path="/contacto" element={<ContactUs translate={t} />} />
                     <Route path="/notificacion" element={<Notification translate={t}/>} />
                 </Routes>
             </BrowserRouter>

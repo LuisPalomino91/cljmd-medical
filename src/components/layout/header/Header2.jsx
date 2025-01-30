@@ -4,10 +4,12 @@ import { Link } from "@mui/material";
 import Menu from '../Menu';
 import MobileMenu from "../MobileMenu";
 import { useTranslation } from "react-i18next";
+import i18n from "../../../language/i18n";
 {/*import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"*/}
 
-export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar, translate, handleIdioma }) {
+export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar, translate }) {
+
     return (
         <>
             <header className={`main-header header-style-two ${scroll ? "fixed-header" : ""}`}>
@@ -22,7 +24,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
                         </ul>
                         <ul className="social-links clearfix">
                             <li><Link href="https://www.facebook.com/profile.php?id=61568502372047"><i className="icon-7" width={25} height={25}></i></Link></li>
-                            <li><img src="assets/images/idioma/mexico.png" alt="" width={25} height={25} onClick={()=>{handleIdioma(1)}} /> | <img src="assets/images/idioma/estadosunidos.png" alt="" width={25} height={25} onClick={()=>{handleIdioma(2)}} /></li>
+                            <li><img src="assets/images/idioma/mexico.png" alt="" width={25} height={25} onClick={() => { i18n.changeLanguage("es") }} /> | <img src="assets/images/idioma/estadosunidos.png" alt="" width={25} height={25} onClick={() => { i18n.changeLanguage("en") }} /></li>
                         </ul>
                     </div>
 
@@ -71,8 +73,8 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
                         </div>
                     </div>
                 </div>{/* End Sticky Menu */}
-                {/* Mobile Menu  */}
 
+                {/* Mobile Menu */}
                 <MobileMenu handleMobileMenu={handleMobileMenu} translate={translate} />
             </header>
         </>

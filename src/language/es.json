@@ -77,17 +77,17 @@
             {
                 "label": "Diabetes",
                 "href": "general",
-                "activo": "current"
+                "activo": "d"
             },
             {
                 "label": "Hipertención",
                 "href": "service-details-2",
-                "activo": ""
+                "activo": "h"
             },
             {
                 "label": "Nutrición",
                 "href": "service-details-3",
-                "activo": ""
+                "activo": "n"
             }
         ],
         "diabetes": {
@@ -203,7 +203,9 @@
     },
     "dlgPromocion": {
         "titulo": "Paquete Seleccionado",
-        "informacion": "El paquete que seleccionaste es un <b>:paquete</b> con un costo de <b>:precio MXN</b>, el cual ya cuenta con consulta incluida y estudios de laboratorio. Para poder continuar con su registro favor ingresar la siguiente información:",
+        "infoText": "El paquete que seleccionaste es un ",
+        "infoText2":" con un costo de ",
+        "infoText3": ", el cual ya cuenta con consulta incluida y estudios de laboratorio. Para poder continuar con su registro favor ingresar la siguiente información:",
         "lblPaciente": "Nombre del Paciente",
         "lblNumero": "99-9999-9999",
         "lblCorreo": "me@example.com",
@@ -241,7 +243,7 @@
         "llamanos": {
             "titulo": "Llamanos",
             "subTitulo": "Consultorio:",
-            "valor": "(+52)55-2456-9564"
+            "valor": "(+52) 55-2456-9564"
         },
         "correo": {
             "titulo": "Dirección Electrónica",

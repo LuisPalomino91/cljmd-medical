@@ -10,7 +10,7 @@ import DataBg from "../elements/DataBg";
 import BackToTop from "../elements/BackToTop";
 import Footer from "../footer/Footer";
 
-export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls, translate, handleIdioma }) {
+export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls, translate }) {
     const [scroll, setScroll] = useState(0);
     const [isMobileMenu, setMobileMenu] = useState(false);
     const handleMobileMenu = () => {
@@ -41,7 +41,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
         <>
             <DataBg />
             <div className={`boxed_wrapper ltr ${wrapperCls ? wrapperCls : ""}`} id="#top">
-                <Header2 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} translate={translate} handleIdioma={handleIdioma} />
+                <Header2 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} translate={translate} />
 
                 {/*<Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} />
                 <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
@@ -52,9 +52,9 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
 
                 {/*{(footerStyle === 1 || !footerStyle) && <Footer1 />}
                 {footerStyle === 2 && <Footer2 />}*/}
-                <Footer translate={translate} handleIdioma={handleIdioma}/>
+                <Footer translate={translate} />
             </div>
-            <BackToTop scroll={scroll}/>
+            <BackToTop scroll={scroll} />
         </>
     );
 }

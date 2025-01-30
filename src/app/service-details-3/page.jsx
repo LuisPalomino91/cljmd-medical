@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Layout from '../../components/layout/Layout'
 import { Link } from '@mui/material'
 
-export default function Services3({ translate, cambioIdioma }) {
+export default function Services3({ translate }) {
 
     const servicios = translate("servicios", { returnObjects: true });
 
@@ -27,7 +27,7 @@ export default function Services3({ translate, cambioIdioma }) {
     }
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Service Details" translate={translate} handleIdioma={cambioIdioma}>
+            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Service Details" translate={translate}>
                 <div>
                     {/* service-section */}
                     <section className="service-details pb_110" style={{ marginTop: "10px" }}>
@@ -43,7 +43,7 @@ export default function Services3({ translate, cambioIdioma }) {
                                                 <ul className="category-list clearfix">
                                                     {servicios.menu.map((elemen) => {
                                                         return (
-                                                            <li><Link href={elemen.href} className={elemen.activo}>{elemen.label}</Link></li>
+                                                            <li><Link href={elemen.href} className={(elemen.activo === 'n' ? 'current' : '')}>{elemen.label}</Link></li>
                                                         );
                                                     })}
                                                 </ul>
@@ -66,7 +66,7 @@ export default function Services3({ translate, cambioIdioma }) {
                                 <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                                     <div className="service-details-content">
                                         <div className="content-one mb_60">
-                                            <figure className="image-box mb_40"><img src="assets/images/service/service-7.jpg" alt="" /></figure>
+                                            {/*<figure className="image-box mb_40"><img src="assets/images/service/service-7.jpg" alt="" /></figure>*/}
                                             <div className="text-box">
                                                 <h2>{servicios.nutricion.pregunta}</h2>
                                                 <p>{servicios.nutricion.parrafo1}</p><br />
