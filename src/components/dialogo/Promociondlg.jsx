@@ -37,10 +37,8 @@ export default function Promociondlg({ open, handleClose, paquete, translate }) 
         <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
             <DialogTitle id="form-dialog-title">{dlgPromocion.titulo}</DialogTitle>
             <DialogContent>
-                <DialogContentText>
-                    {(dlgPromocion.informacion).replace(':paquete', paquete.titulo).replace(':precio', paquete.precio)}
-                </DialogContentText>
-                <br />
+                {dlgPromocion.infoText}<b>{paquete.titulo}</b>{dlgPromocion.infoText2}<b>{paquete.precio}</b>{dlgPromocion.infoText3}
+                <br /><br />
                 <form ref={form} onSubmit={registraPromocion} className="default-form">
                     <input name="paquete" value={paquete.titulo} hidden />
                     <input name="precio" value={paquete.precio} hidden />

@@ -1,10 +1,12 @@
 'use client'
 import { Link } from "@mui/material";
 import { useState } from "react";
+import i18n from "../../language/i18n";
 
 export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar, translate }) {
 
     const menus = translate("menu", { returnObjects: true });
+    const contacto = translate("contactanos", { returnObjects: true });
 
     const [isActive, setIsActive] = useState({
         status: false,
@@ -64,17 +66,22 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar,
                         </div>
                     </div>
                     <div className="contact-info">
-                        <h4>Contacto</h4>
+                        <h4>{contacto.titulo}</h4>
                         <ul>
-                            <li>C.3 24, Agrícola Pantitlán, Iztacalco, 08100 Ciudad de México, CDMX</li>
-                            <li><Link href="tel:5524569564">Telefono: 55-2456-9564</Link></li>
-                            <li><Link href="mailto:cljmdconsultorio@gmail.com">cljmdconsultorio@gmail.com</Link></li>
+                            <li>{contacto.direccion.subTitulo} {contacto.direccion.valor}</li>
+                            <li><Link href="tel:5524569564">{contacto.llamanos.valor}</Link></li>
+                            <li><Link href="mailto:cljmdconsultorio@gmail.com">{contacto.correo.valor}</Link></li>
                         </ul>
                     </div>
                     {/*Social Links*/}
                     <div className="social-links">
                         <ul className="clearfix">
                             <li><Link href="https://www.facebook.com/profile.php?id=61568502372047"><span className="fab fa-facebook-square"></span></Link></li>
+                        </ul>
+                    </div>
+                    <div className="social-links">
+                        <ul className="clearfix">
+                            <li><img src="assets/images/idioma/mexico.png" alt="" width={25} height={25} onClick={() => { i18n.changeLanguage("es") }} /> | <img src="assets/images/idioma/estadosunidos.png" alt="" width={25} height={25} onClick={() => { i18n.changeLanguage("en") }} /> </li>
                         </ul>
                     </div>
                 </nav>

@@ -19,7 +19,6 @@ export default function Footer({ translate, handleIdioma }) {
                                 <li><Link href="/">{footer.avisos}</Link></li>
                                 <li><Link href="/">{footer.terminos}</Link></li>
                                 <li><Link href="/contacto">{footer.contactanos}</Link></li>
-                                <li><img src="assets/images/idioma/mexico.png" alt="" width={25} height={25} onClick={()=>{handleIdioma(1)}} /> | <img src="assets/images/idioma/estadosunidos.png" alt="" width={25} height={25} onClick={()=>{handleIdioma(2)}} /></li>
                             </ul>
                             <div className="copyright">
                                 <p>{footer.copyrigth} &copy; {footer.anio}</p>

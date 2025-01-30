@@ -1,13 +1,13 @@
 'use client'
 import Layout from '../../components/layout/Layout'
 
-export default function AboutUs({translate, cambioIdioma }) {
+export default function AboutUs({translate}) {
 
     const about = translate("about", { returnObjects: true });
 
     return (
         <>
-            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Blog Details" translate={translate} handleIdioma={cambioIdioma}>
+            <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Blog Details" translate={translate} >
                 <div>
                     <section className="sidebar-page-container sec-pad-2">
                         <div className="auto-container">
