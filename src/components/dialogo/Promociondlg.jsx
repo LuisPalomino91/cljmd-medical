@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { Navigate } from "react-router-dom";
 import { API_PUBLICKEY, API_SERVICEID, API_TEMPLATE_CONTAC, API_TEMPLATE_PROMO } from "../../../env";
+import { BeatLoader } from "react-spinners";
 
 export default function Promociondlg({ open, handleClose, paquete, translate }) {
 
@@ -10,27 +11,33 @@ export default function Promociondlg({ open, handleClose, paquete, translate }) 
 
     const form = useRef();
     const [codigo, setCodigo] = useState("");
-    
+
     const [isEmail, setIsEmail] = useState('none');
     const [isTelefono, setIsTelefono] = useState('none');
 
+    const [loading, setLoading] = useState(false);
+
     const registraPromocion = (e) => {
         e.preventDefault();
+        setLoading(true);
 
-        if(isEmail === 'none' && isTelefono === 'none'){
+        if (isEmail === 'none' && isTelefono === 'none') {
             emailjs.sendForm(API_SERVICEID, API_TEMPLATE_PROMO, form.current, {
                 publicKey: API_PUBLICKEY
             }).then(
                 () => {
                     handleClose();
                     alert('Se envio correo a la cuenta proporcionada.');
+                    setLoading(false);
                 },
                 (error) => {
                     alert('OCURRIO UN ERROR -> ', error.text);
+                    setLoading(false);
                 },
             );
-        }else{
+        } else {
             alert('No se puede procesar con la solicitud tiene campos incorrectos.');
+            setLoading(false);
         }
     };
 
@@ -46,7 +53,7 @@ export default function Promociondlg({ open, handleClose, paquete, translate }) 
 
         if (regex.test(email)) {
             setIsEmail('none');
-        }else{
+        } else {
             setIsEmail('block');
         }
     }
@@ -57,7 +64,7 @@ export default function Promociondlg({ open, handleClose, paquete, translate }) 
 
         if (regex.test(telefono)) {
             setIsTelefono('none');
-        }else{
+        } else {
             setIsTelefono('block');
         }
     }
@@ -77,25 +84,34 @@ export default function Promociondlg({ open, handleClose, paquete, translate }) 
                             <input type="text" name="nombrePac" placeholder={dlgPromocion.lblPaciente} required onChange={generaCodigo} />
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-                            <input type="text" name="telContacto" placeholder={dlgPromocion.lblNumero} required onChange={validaTelefono}/>
-                            <span style={{marginLeft:"1em", color: "red", display: isTelefono }}>Formato de Telefono Incorrecto</span>
+                            <input type="text" name="telContacto" placeholder={dlgPromocion.lblNumero} required onChange={validaTelefono} />
+                            <span style={{ marginLeft: "1em", color: "red", display: isTelefono }}>Formato de Telefono Incorrecto</span>
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-                            <input type="email" name="correoContacto" placeholder={dlgPromocion.lblCorreo} required onChange={validaEmail}/>
-                            <span style={{marginLeft:"1em", color: "red", display: isEmail }}>Formato de Correo Incorrecto</span>
+                            <input type="email" name="correoContacto" placeholder={dlgPromocion.lblCorreo} required onChange={validaEmail} />
+                            <span style={{ marginLeft: "1em", color: "red", display: isEmail }}>Formato de Correo Incorrecto</span>
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
                             {dlgPromocion.informacionFooter}
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 form-group" style={{ textAlign: "center" }}>
+                        <div className="col-lg-6 col-md-6 col-sm-12 form-group" style={{ textAlign: "center", display: (!loading ? 'block' : 'none') }}>
                             <Button onClick={handleClose} color="primary">
                                 {dlgPromocion.btnCancelar}
                             </Button>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 form-group" style={{ textAlign: "center" }}>
+                        <div className="col-lg-6 col-md-6 col-sm-12 form-group" style={{ textAlign: "center", display: (!loading ? 'block' : 'none') }}>
                             <Button type="submit" color="primary">
                                 {dlgPromocion.btnGuardar}
                             </Button>
+                        </div>
+                        <div className="col-lg-12 col-md-12 col-sm-12 form-group" style={{ textAlign: "center", display: (loading ? 'block' : 'none') }}>
+                            <BeatLoader
+                                loading={loading}
+                                color="#3a73f1"
+                                margin={4}
+                                size={25}
+                                speedMultiplier={1}
+                            />
                         </div>
                     </div>
                 </form>
