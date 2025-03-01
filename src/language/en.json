@@ -49,8 +49,8 @@
         }
     ],
     "banner": {
-        "titulo": "More than ann option, we area solution",
-        "subTitulo": "DIABETES HYPERTENSION",
+        "titulo": "More than an option, we are a solution, we prevent, treat and cure diabetes mellitus 2, and some of the diseases of the Psychoimmunometabolic group.",
+        "subTitulo": "DIABETES MELLITUS 2 / HYPERTENSION",
         "mensaje": "Give yourself the opportunity to trandorm your health."
     },
     "about": {
@@ -62,13 +62,14 @@
         "valores":"Humility, honesty, ethical principles, attitude of service, warmth, quality continuous improvement through research based on medical and clinical evidence but above all in living with the patient and their family. First the patient, then the patient and always the patient and behind the doctor and his family.",
         "titulo": "WHO ARE WE?",
         "subTitulo": "CL-JMD Offices",
-        "mensaje": "At CL-JMD Offices, you will be able to find a better medical aproach, professional and high level of care not only in Diabetes and Hypertesion, but also in Psychoimmunometabolic Diseases. Our values with the client are:",
+        "mensaje": "At the CL-JMD office and laboratory, you can find a better professional medical approach and of high level of care not only in atherosclerosis, diabetes and hypertension, but also other Psychoimmunometabolic diseases. And this high level of care is aimed above all at prevention, treatment and cure. Our values with the client are:",
+        "mensaje2": "BECAUSE WE SAY AND SHOW THAT PREVENTION IS IN THE CURE",
         "elementos": [
-            "Passion",
-            "Responsibility",
+            "Passion and love for life",
+            "Responsibility for the same",
             "Customer focused"
         ],
-        "aniosExp": "40 Years",
+        "aniosExp": "47 Years",
         "experiencia": "Medical Experience"
     },
     "servicios": {
@@ -142,7 +143,8 @@
                 "Have energy for the functioning of the body",
                 "Renew damaged tissues"
             ]
-        }
+        },
+        "contactanos": "For more information contact us via email or through our telephone numbers."
     },
     "promociones": {
         "titulo": "OUR PACKAGES",
@@ -218,16 +220,34 @@
         "subTitulo": "What do our patients think about CL-JMD Clinics?",
         "lista": [
             {
-                "nombre": "Naruto Uzumaki",
-                "mensaje": "Quiero ser hokage"
+                "nombre": "Guillermina Morales Esquivel",
+                "mensaje": "I thank each of the collaborators of the CL-JMD Clinic for having treated and cured diabetes mellitus 2 and other diseases for 37 years.",
+                "estrellas": 5
             },
             {
-                "nombre": "Monkey D. Luffy",
-                "mensaje": "Quiero ser pirata"
+                "nombre": "Abraham González Ramírez",
+                "mensaje": "I have been cured for more than 20 years and I am currently in perfect condition. Greetings; To date I have followed the instructions provided by Consultorios CL-JMD, I am very grateful.",
+                "estrellas": 5
             },
             {
-                "nombre": "Son Goku",
-                "mensaje": "Quiero ser el mas fuerte del universo"
+                "nombre": "Rosalino Peña Pedraza",
+                "mensaje": "At Consultorio CL-JMD I have treated several diseases and cured diabetes mellitus 2. It was fortunate to have found this clinic; There is no way I can thank you for every attention you gave me.",
+                "estrellas": 5
+            },
+            {
+                "nombre": "Beatriz Lozoya Reynaga",
+                "mensaje": "I was one of the first patients who cured me of acute and chronic hypoglycemia, I thank all the employees of the CL-JMD Clinic.",
+                "estrellas": 5
+            },
+            {
+                "nombre": "Mauro Martínez Robles",
+                "mensaje": "CL-JMD Clinics saved my life and cured me of diabetes mellitus 2 and my diabetic foot, which at that time doctors wanted to remove my leg from the thigh and other doctors from the knee; I am from the State of Puebla and I am very grateful for your attention.",
+                "estrellas": 4
+            },
+            {
+                "nombre": "Emeterio Rangel Chavez",
+                "mensaje": "As a result of a scare due to an assault on October 12, 1970, I was declared type 2 diabetes mellitus; In 1986 I went to CL-JMD Clinics which treated me with a JMD solution every four hours and they began to take me off the bi-euglucon little by little until I stopped taking it in 10 days until today I have improved a lot and today February 1988 I am in perfect condition without taking any medication after having diabetes for 16 years it disappeared, that's why today February 12, 1989.",
+                "estrellas": 4
             }
         ]
     },

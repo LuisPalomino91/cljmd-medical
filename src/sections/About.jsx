@@ -42,8 +42,11 @@ export default function About({ translate }) {
                                                 );
                                             })}
                                         </ul>
+                                        <br/>
+                                        <p>
+                                            {about.mensaje2}
+                                        </p>
                                     </div>
-                                    <br/>
                                     <div className="lower-box">
                                         <div className="experience-box">
                                             <div className="icon-box"><i className="icon-29"></i></div>

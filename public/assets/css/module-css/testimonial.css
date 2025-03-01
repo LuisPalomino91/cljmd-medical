@@ -148,6 +148,8 @@
 }
 
 .testimonial-style-two .thumb-box .thumb-1 {
+    height: 6rem;
+    width: 6rem;
     top: -47px;
     left: 203px;
     -webkit-animation: zoom-fade 4s infinite linear;
@@ -155,6 +157,8 @@
 }
 
 .testimonial-style-two .thumb-box .thumb-2 {
+    height: 6rem;
+    width: 6rem;
     top: 154px;
     right: -41px;
     -webkit-animation: zoom-fade 6s infinite linear;
@@ -162,6 +166,8 @@
 }
 
 .testimonial-style-two .thumb-box .thumb-3 {
+    height: 6rem;
+    width: 6rem;
     right: 85px;
     bottom: -19px;
     -webkit-animation: zoom-fade 5s infinite linear;
@@ -169,6 +175,8 @@
 }
 
 .testimonial-style-two .thumb-box .thumb-4 {
+    height: 6rem;
+    width: 6rem;
     left: 3px;
     bottom: 41px;
     -webkit-animation: zoom-fade 4s infinite linear;
@@ -176,6 +184,8 @@
 }
 
 .testimonial-style-two .thumb-box .thumb-5 {
+    height: 6rem;
+    width: 6rem;
     left: -25px;
     top: 94px;
     -webkit-animation: zoom-fade 6s infinite linear;
@@ -192,11 +202,11 @@
     position: absolute;
     content: '';
     border: 1px dashed #e5e5e5;
-    width: 220px;
-    height: 220px;
+    width: 253px;
+    height: 198px;
     border-radius: 50%;
-    left: -35px;
-    top: -35px;
+    left: -1px;
+    top: -1px;
 }
 
 .testimonial-style-two .owl-carousel .owl-stage-outer {
