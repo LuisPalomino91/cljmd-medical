@@ -81,6 +81,8 @@ export default function Services2({ translate }) {
                                                 </ul>
                                                 <br />
                                                 <p>{servicios.hipertension.parrafo4}</p>
+                                                <br/>
+                                                <b>{servicios.contactanos} </b>
                                             </div>
                                         </div>
                                         {/*<div className="content-two">

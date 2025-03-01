@@ -86,7 +86,8 @@ export default function Services({ translate }) {
                                                                 <li>{elemen}</li>
                                                             );
                                                         })}
-                                                </ul>
+                                                </ul><br/>
+                                                <b>{servicios.contactanos} </b>
                                             </div>
                                         </div>
                                         {/*<div className="content-two">

@@ -49,8 +49,8 @@
         }
     ],
     "banner": {
-        "titulo": "Más que una opción, somos una solución",
-        "subTitulo": "DIABETES HIPERTENSIÓN",
+        "titulo": "Más que una opción, somos una solución, prevenimos, tratamos y curamos la diabetes mellitus 2, y algunas de las enfermedades del grupo Psicoinmumotabolicas.",
+        "subTitulo": "DIABETES MELLITUS 2 / HYPERTENSIÓN",
         "mensaje": "Date la oportunidad de poder transformar tu salud."
     },
     "about": {
@@ -62,13 +62,14 @@
         "valores":"Humildad, honestidad, principios éticos, actitud de servir, calidez, calidad mejora continua por medio de la investigación basada en la evidencia médica y clínica pero sobre todo en la convivencia con el paciente y sus familiares . Primero el paciente, después el paciente y siempre el paciente y detras de el médico y su familia.",
         "titulo": "¿QUIÉNES SOMOS?",
         "subTitulo": "Consultorios CL-JMD",
-        "mensaje": "En Consultorios CL-JMD, podrás encontrar un mejor enfoque médico, profesional y de alto nivel en atención no solo en Diabetes e Hipertensión, sino también en Enfermedades Psicoimunometabólicas. Nuestros valores con el cliente son:",
+        "mensaje": "En el consultorio y laboratorio CL-JMD, podrás encontrar un mejor enfoque médico profesional y de alto nivel de atención no solo en ateroesclerosis, diabetes e hipertensión, sino también otras enfermedades Psicoinmunometabólicas. Y este alto nivel de atención va encaminado sobre todo a la prevención, tratamiento y curación. Nuestros valores con el cliente son:",
+        "mensaje2": "PORQUE NOSOTROS DECIMOS Y DEMOSTRAMOS QUE EN LA CURACIÓN ESTÁ LA PREVENCIÓN",
         "elementos": [
-            "Pasión",
-            "Responsabilidad",
+            "Pasión y amor por la vida",
+            "Responsabilidad para la misma",
             "Enfocados en el cliente"
         ],
-        "aniosExp": "40 Años",
+        "aniosExp": "47 Años",
         "experiencia": "Experiencia Médica"
     },
     "servicios": {
@@ -94,20 +95,25 @@
             "titulo": "Diabetes",
             "mensaje": "El paciente que más sabe y aplica lo que sabe, es el paciente que más y mejor vive.",
             "pregunta": "¿Qué es la Diabetes?",
-            "parrafo1": "La diabetes es una enfermedad crónica que se caracteriza por niveles elevados de azúcar en la sangre, también llamada glucosa, y por una deficiencia de insulina. La insulina es una hormona que el páncreas produce para ayudar a que la glucosa entre en las células y sea utilizada como energía.",
+            "parrafo1": "La diabetes es una enfermedad crónica que se caracteriza por niveles elevados de azúcar en la sangre, también llamada glucosa, y por una deficiencia de insulina en calidad y en cantidad. La insulina es una hormona que el páncreas produce para ayudar a que la glucosa entre en las células y sea utilizada como energía.",
             "parrafo2": "La diabetes puede afectar al corazón, los ojos, los riñones y el sistema nervioso. Entre sus complicaciones se encuentran:",
             "elementos": [
                 "Enfermedad cardíaca",
                 "Accidente cerebrovascular",
                 "Presión arterial alta",
-                "Ateroesclerosis",
-                "Neuropatía, que es un daño en los nervios de las extremidades"
+                "Neuropatía, que es un daño en los nervios de las extremidades",
+                "Nefropatía",
+                "Retinopatía",
+                "Vasculopatía",
+                "Insulinopatía",
+                "NAD"
             ],
             "parrafo3": "Existen tres tipos principales de diabetes:",
             "elementosD": [
-                "Diabetes tipo 1 Suele aparecer en la juventud y afecta al páncreas, produciendo poca o nada de insulina.",
-                "Diabetes tipo 2 Es el tipo más común y se produce cuando el cuerpo no es capaz de producir insulina.",
-                "Diabetes gestacional Se presenta durante el embarazo y suele darse en una etapa avanzada de la gestación."
+                "Diabetes tipo 1 Suele aparecer en la juventud y afecta al páncreas, no se produce insulina, la célula beta se daña y no es capaz de producir insulina.",
+                "Diabetes tipo 2 Es el tipo más común y se produce insulina de mala calidad o poca cantidad.",
+                "Diabetes gestacional Se presenta durante el embarazo y suele darse en una etapa avanzada de la gestación.",
+                "Hay otro grupo con otras causas (por ejemplo genéticas), que no son comunes por eso no se mencionan aquí."
             ]
         },
         "hipertension": {
@@ -142,7 +148,8 @@
                 "Disponer de energía para el funcionamiento del organismo",
                 "Renovar tejidos dañados"
             ]
-        }
+        },
+        "contactanos": "Para mas información contactanos via correo electronico o por medio de nuestros numeros telefonicos."
     },
     "promociones": {
         "titulo": "NUESTROS PAQUETES",
@@ -218,16 +225,34 @@
         "subTitulo": "¿Qué piensan nuestros pacientes de Consultorios CL-JMD?",
         "lista": [
             {
-                "nombre": "Naruto Uzumaki",
-                "mensaje": "Quiero ser hokage"
+                "nombre": "Guillermina Morales Esquivel",
+                "mensaje": "Agradezco a cada uno de los colaboradores del Consultorio CL-JMD el haber tratado y curado de la diabetes mellitus 2 y otras enfermedades, desde hace 37 años.",
+                "estrellas": 5
             },
             {
-                "nombre": "Monkey D. Luffy",
-                "mensaje": "Quiero ser pirata"
+                "nombre": "Abraham González Ramírez",
+                "mensaje": "Tengo más de 20 años curado y actualmente estoy en perfectas condiciones de saludos; he seguido hasta la fecha las indicaciones proporcionadas por Consultorios CL-JMD, estoy muy agradecido.",
+                "estrellas": 5
             },
             {
-                "nombre": "Son Goku",
-                "mensaje": "Quiero ser el mas fuerte del universo"
+                "nombre": "Rosalino Peña Pedraza",
+                "mensaje": "En Consultorio CL-JMD me he tratado varias enfermedades y curado de la diabetes mellitus 2 fue una suerte el haber encontrado esta clínica; no hay manera de poder agradecer cada atención que me brindaron.",
+                "estrellas": 5
+            },
+            {
+                "nombre": "Beatriz Lozoya Reynaga",
+                "mensaje": "Fui uno de los primeros pacientes que me curaron de hipoglucemia aguda y cronica, agradezco a todos los empleados del Consultorio CL-JMD.",
+                "estrellas": 5
+            },
+            {
+                "nombre": "Mauro Martínez Robles",
+                "mensaje": "Consultorios CL-JMD me salvo la vida y me curo de la diabetes mellitus 2 y de mi pie diabético que en aquel tiempo me querían quitar la pierna los médicos desde el muslo y otros médicos desde la rodilla; soy del Estado de Puebla y estoy muy agradecido por su atención.",
+                "estrellas": 4
+            },
+            {
+                "nombre": "Emeterio Rangel Chavez",
+                "mensaje": "A raíz de un susto por un asalto en Octubre 12 del año 1970 me declararon la diabetes mellitus 2; en el año de 1986 acudí a Consultorios CL-JMD el cual me trato con una solución JMD cada cuatro horas y me empezó a quitar el bi-euglucon poco a poco hasta dejara de tomar en 10 días hasta hoy mejorando mucho y hoy febrero de 1988 me encuentro en perfectas condiciones sin tomar ningún medicamento después de tener la diabetes por 16 años desapareció, por eso hoy febrero doce de 1989.",
+                "estrellas": 4
             }
         ]
     },

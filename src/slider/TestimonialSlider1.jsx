@@ -51,131 +51,32 @@ const swiperOptions = {
         },
     }
 }
-export default function TestimonialSlider1() {
+export default function TestimonialSlider1({ lstTestimonios }) {
     return (
         <>
             <Swiper {...swiperOptions} className="single-item-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-                <SwiperSlide className="slide-item">
-                    <div className="testimonial-block-one">
-                        <div className="inner-box">
-                            <div className="icon-box"><i className="icon-23"></i></div>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia coequat duis enim velit mollit.</p>
-                            <div className="author-box">
-                                <figure className="author-thumb"><img src="assets/images/resource/testimonial-1.png" alt="" /></figure>
-                                <ul className="rating clearfix">
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="far fa-star"></i></li>
-                                </ul>
-                                <h3>Robert Fox</h3>
-                                <span className="designation">Dog Trainer</span>
+                {lstTestimonios.map((elemen, i) => {
+                    return (
+                        <SwiperSlide className="slide-item">
+                            <div className="testimonial-block-one">
+                                <div className="inner-box">
+                                    <div className="icon-box"><i className="icon-23"></i></div>
+                                    <p>{elemen.mensaje}</p>
+                                    <div className="author-box">
+                                        <figure className="author-thumb"><img src="assets/images/resource/testimonial-1.jpeg" alt="" /></figure>
+                                        <ul className="rating clearfix">
+                                            {[...Array(Number(elemen.estrellas)).keys()].map((index) => (
+                                                <li><i className="fas fa-star"></i></li>
+                                            ))}
+                                        </ul>
+                                        <h3>{elemen.nombre}</h3>
+                                        {/*<span className="designation">Dog Trainer</span>*/}
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className="slide-item">
-                    <div className="testimonial-block-one">
-                        <div className="inner-box">
-                            <div className="icon-box"><i className="icon-23"></i></div>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia coequat duis enim velit mollit.</p>
-                            <div className="author-box">
-                                <figure className="author-thumb"><img src="assets/images/resource/testimonial-1.png" alt="" /></figure>
-                                <ul className="rating clearfix">
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="far fa-star"></i></li>
-                                </ul>
-                                <h3>Robert Fox</h3>
-                                <span className="designation">Dog Trainer</span>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className="slide-item">
-                    <div className="testimonial-block-one">
-                        <div className="inner-box">
-                            <div className="icon-box"><i className="icon-23"></i></div>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia coequat duis enim velit mollit.</p>
-                            <div className="author-box">
-                                <figure className="author-thumb"><img src="assets/images/resource/testimonial-1.png" alt="" /></figure>
-                                <ul className="rating clearfix">
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="far fa-star"></i></li>
-                                </ul>
-                                <h3>Robert Fox</h3>
-                                <span className="designation">Dog Trainer</span>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className="slide-item">
-                    <div className="testimonial-block-one">
-                        <div className="inner-box">
-                            <div className="icon-box"><i className="icon-23"></i></div>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia coequat duis enim velit mollit.</p>
-                            <div className="author-box">
-                                <figure className="author-thumb"><img src="assets/images/resource/testimonial-1.png" alt="" /></figure>
-                                <ul className="rating clearfix">
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="far fa-star"></i></li>
-                                </ul>
-                                <h3>Robert Fox</h3>
-                                <span className="designation">Dog Trainer</span>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className="slide-item">
-                    <div className="testimonial-block-one">
-                        <div className="inner-box">
-                            <div className="icon-box"><i className="icon-23"></i></div>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia coequat duis enim velit mollit.</p>
-                            <div className="author-box">
-                                <figure className="author-thumb"><img src="assets/images/resource/testimonial-1.png" alt="" /></figure>
-                                <ul className="rating clearfix">
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="far fa-star"></i></li>
-                                </ul>
-                                <h3>Robert Fox</h3>
-                                <span className="designation">Dog Trainer</span>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className="slide-item">
-                    <div className="testimonial-block-one">
-                        <div className="inner-box">
-                            <div className="icon-box"><i className="icon-23"></i></div>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia coequat duis enim velit mollit.</p>
-                            <div className="author-box">
-                                <figure className="author-thumb"><img src="assets/images/resource/testimonial-1.png" alt="" /></figure>
-                                <ul className="rating clearfix">
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="fas fa-star"></i></li>
-                                    <li><i className="far fa-star"></i></li>
-                                </ul>
-                                <h3>Robert Fox</h3>
-                                <span className="designation">Dog Trainer</span>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-
+                        </SwiperSlide>
+                    );
+                })}
             </Swiper>
         </>
     )

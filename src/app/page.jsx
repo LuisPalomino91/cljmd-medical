@@ -14,6 +14,7 @@ import Promotions from "./promotions/page";
 import ContactUs from "./contact-us/page";
 import Services2 from "./service-details-2/page";
 import Services3 from "./service-details-3/page";
+import Testimonios from "./testimonial/page";
 
 
 export default function Home() {
@@ -29,11 +30,12 @@ export default function Home() {
                             <Banner translate={t} />
                             <About translate={t} />
                             <Pricing translate={t} />
+                            <Testimonial translate={t} />
                             <Contact translate={t} />
                         </Layout>}>
                     </Route>
                     <Route path="/nosotros" element={<AboutUs translate={t} />} />
-                    <Route path="/testimonios" element={null} />
+                    <Route path="/testimonios" element={<Testimonios translate={t} />} />
                     <Route path="/general" element={<Services translate={t} />} />
                     <Route path="/service-details-2" element={<Services2 translate={t} />} />
                     <Route path="/service-details-3" element={<Services3 translate={t} />} />
